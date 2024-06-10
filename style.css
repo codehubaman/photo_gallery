@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #39297b;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin: 100px auto 50px;
+    font-weight: 500;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    background: #434343;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+form input {
+
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    /* padding input from top and bttom is 0 and left and right is 30px */
+    padding: 0px 30px;
+}
+
+form button {
+    padding: 0 40px;
+    height: 100%;
+    background: #ff3929;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+
+    cursor: pointer;
+
+
+}
+
+::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+#show-more-btn {
+    background: #ff3929;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    margin: 10px auto 100px;
+
+}
+
+#search-result {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    /* we get 3 images in 1 column */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+
+}
+
+#search-result img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 6px;
+}
